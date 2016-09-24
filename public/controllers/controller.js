@@ -4,7 +4,7 @@ app.controller('AppCtrl', function($scope, $http) {
 
   const refresh = () => {
     $http.get('/contactlist').success( (res) => {
-      console.log('I got some data');
+      console.log('I've got some data');
       $scope.contactlist = res;
       $scope.contact = '';
     });
